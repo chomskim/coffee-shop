@@ -9,9 +9,9 @@ export default function Layout({ children }) {
           <h1>Joe's Coffee Shop</h1>
         </div>
       </header>
-      <main id={styles.main}>
+      <div id={styles.main}>
         {children}
-      </main>
+      </div>
     </div>
   );
 }
