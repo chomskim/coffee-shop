@@ -72,6 +72,12 @@ Service --> Click [**Enable Git Gateway**]
 Identity Registration --> Click [**Edit**] --> Select Invite-only
 
 
+Site details  
+
+Change name  
+
+
+$ npm install netlify-cms-app@2.12.15 gatsby-plugin-netlify-cms@4.3.5
 
 
 
