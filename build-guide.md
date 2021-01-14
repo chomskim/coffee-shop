@@ -50,6 +50,27 @@ To Pick Repository -- Click [**Github**]
 
 Select chomskim/coffee-shop
 
+Deploy  
+
+Site details  
+
+Change name  
+
+
+`$ npm install netlify-cms-app@2.12.15 gatsby-plugin-netlify-cms@4.3.5`
+
+## Config for Netlify
+
+Add config.yml to static/admin
+
+[On Netlify Console](https://app.netlify.com/sites/chomskim-coffee-shop/settings/general)
+
+Identity --> Click [**Enable Identity**]
+
+Service --> Click [**Enable Git Gateway**]
+
+Identity Registration --> Click [**Edit**] --> Select Invite-only
+
 
 
 
