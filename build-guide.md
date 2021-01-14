@@ -69,7 +69,7 @@ Identity --> Click [**Enable Identity**]
 
 Service --> Click [**Enable Git Gateway**]
 
-Identity Registration --> Click [**Edit**] --> Select Invite-only
+Identity Registration --> Click [**Edit**] --> Select **Open**
 
 
 Site details  
@@ -78,6 +78,14 @@ Change name
 
 
 $ npm install netlify-cms-app@2.12.15 gatsby-plugin-netlify-cms@4.3.5
+
+
+## Registering and logging in
+
+https://chomskim-coffee-shop.netlify.app/admin
+
+**Sign up**/Log in
+
 
 
 
