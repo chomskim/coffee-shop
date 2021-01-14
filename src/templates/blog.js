@@ -1,10 +1,12 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Layout from "../components/Layout"
-import styles from "./blog.module.css"
+import React from 'react';
+import { graphql, Link } from 'gatsby';
+import BlogPost from '../components/BlogPost';
+import Layout from '../components/Layout';
+import styles from './blog-list.module.css';
 
-export default function BlogTemplate({ data }) {
-  return (
+export default function BlogListTemplate({ data, pageContext }) {
+  // Generate the previous and next page URLs.
+    return (
     <Layout>
       <div className={styles.blog}>
         <h1>{data.markdownRemark.frontmatter.title}</h1>
