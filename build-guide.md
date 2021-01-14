@@ -87,6 +87,12 @@ https://chomskim-coffee-shop.netlify.app/admin
 **Sign up**/Log in
 
 
+## Add Gatsby plugin
+
+$ npm install gatsby-source-filesystem@2.3.14
+
+$ npm install gatsby-transformer-remark@2.8.19
+
 
 
 
