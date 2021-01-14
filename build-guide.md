@@ -50,7 +50,14 @@ To Pick Repository -- Click [**Github**]
 
 Select chomskim/coffee-shop
 
+Deploy  
 
+Site details  
+
+Change name  
+
+
+$ npm install netlify-cms-app@2.12.15 gatsby-plugin-netlify-cms@4.3.5
 
 
 
