@@ -15,12 +15,6 @@ export default function IndexPage() {
           title
         }
       }
-      markdownRemark(frontmatter: { contentKey: { eq: "indexPage" } }) {
-        frontmatter {
-          tagline
-          heroImage
-        }
-      }
     }
   `)
 
