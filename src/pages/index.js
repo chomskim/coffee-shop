@@ -23,8 +23,8 @@ export default function IndexPage() {
 
   return (
     <Layout>
-      <div id={styles.hero} style={{ backgroundImage: `url('${heroImage}')` }}>
-        <h1>{tagline}</h1>
+      <div id={styles.hero} style={{ backgroundImage: `url('heroImage')` }}>
+        <h1>tagline</h1>
       </div>
       <BlogList />
     </Layout>
