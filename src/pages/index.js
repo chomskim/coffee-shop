@@ -8,7 +8,7 @@ import BlogList from "../components/BlogList";
 
 import styles from "./index.module.css";
 
-export default function IndexPage() {
+export default function Home() {
   const data = useStaticQuery(graphql`
     {
       site {

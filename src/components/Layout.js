@@ -28,7 +28,7 @@ export default function Layout({ children }) {
             <Link to="/">Joe's Coffee Shop</Link>
           </h1>
           <Link to="/blog">Blog</Link>
-          <Link to="/menu">Menu</Link>
+          <Link to="/cafe-menu">Menu</Link>
         </div>
       </BackgroundImage>
       <div id={styles.main}>{children}</div>

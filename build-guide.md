@@ -126,6 +126,8 @@ gatsby-transformer-sharp@2.5.10 \
 gatsby-remark-relative-images@0.3.0 \
 gatsby-remark-images@3.3.17 \
 gatsby-background-image@1.1.1
+
+$ npm install gatsby-image
 ```
 
 
