@@ -94,6 +94,22 @@ $ npm install gatsby-source-filesystem@2.3.14
 $ npm install gatsby-transformer-remark@2.8.19
 
 
+## Error loading the CMS configuration
+<pre>
+Config Errors:
+config should have required property 'media_folder'
+config should have required property 'media_library'
+config should match some schema in anyOf
+config should have required property 'backend'
+config should have required property 'collections'
+Check your config.yml file.
+</pre>
 
+To solve the problem
 
+```sh
+$ echo 'application/x-yaml yaml yml' | sudo tee -a /etc/mime.types
+$ cat /etc/mime.types | grep yml
+application/x-yaml yaml yml
+```
 
