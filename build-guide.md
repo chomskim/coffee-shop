@@ -118,5 +118,14 @@ application/x-yaml yaml yml
 
 Mybe tailing blank
 
+## Working with Images
+
+```sh
+$ npm install gatsby-plugin-sharp@2.6.17 \
+gatsby-transformer-sharp@2.5.10 \
+gatsby-remark-relative-images@0.3.0 \
+gatsby-remark-images@3.3.17 \
+gatsby-background-image@1.1.1
+```
 
 

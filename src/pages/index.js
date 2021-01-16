@@ -1,11 +1,12 @@
-import React from "react"
+import React from "react";
 
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby";
+import BackgroundImage from "gatsby-background-image";
 
-import Layout from "../components/Layout"
-import BlogList from "../components/BlogList"
+import Layout from "../components/Layout";
+import BlogList from "../components/BlogList";
 
-import styles from "./index.module.css"
+import styles from "./index.module.css";
 
 export default function IndexPage() {
   const data = useStaticQuery(graphql`
@@ -18,21 +19,27 @@ export default function IndexPage() {
       markdownRemark(frontmatter: { contentKey: { eq: "indexPage" } }) {
         frontmatter {
           tagline
-          heroImage
+          heroImage {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }
-  `)
+  `);
 
-  const tagline = data.markdownRemark.frontmatter.tagline
-  const heroImage = data.markdownRemark.frontmatter.heroImage
+  const tagline = data.markdownRemark.frontmatter.tagline;
+  const heroImage = data.markdownRemark.frontmatter.heroImage;
 
   return (
     <Layout>
-      <div id={styles.hero} style={{ backgroundImage: `url('${heroImage}')` }}>
+      <BackgroundImage id={styles.hero} fluid={heroImage.childImageSharp.fluid}>
         <h1>{tagline}</h1>
-      </div>
+      </BackgroundImage>
       <BlogList />
     </Layout>
-  )
+  );
 }
