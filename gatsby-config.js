@@ -8,14 +8,14 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "blog",
-        path: "src/blog",
+        path: `${__dirname}/src/blog`,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pageData",
-        path: "src/pageData",
+        path: `${__dirname}/src/pageData`,
       },
     },
     "gatsby-transformer-remark",
