@@ -22,6 +22,7 @@ Download or clone from https://github.com/chomskim/coffee-shop
 $ mkdir coffee-shop  
 $ cd coffee-shop  
 $ npm  install
+[$ gatsby clean]
 $ gatsby develop --host 0.0.0.0
 ...
 You can now view gatsby-coffee-shop in the browser.
@@ -112,4 +113,10 @@ $ echo 'application/x-yaml yaml yml' | sudo tee -a /etc/mime.types
 $ cat /etc/mime.types | grep yml
 application/x-yaml yaml yml
 ```
+
+### Problem Solved By Correcting config.yml. But, still I don\'t know what\'s wrong
+
+Mybe tailing blank
+
+
 
