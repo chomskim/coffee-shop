@@ -4,25 +4,7 @@ import MenuCategory from "../components/MenuCategory";
 import { graphql, useStaticQuery } from "gatsby";
 import styles from "./menu.module.css";
 
-export default function Menu() {
-  const data = useStaticQuery(graphql`
-    {
-      markdownRemark(frontmatter: { contentKey: { eq: "menu" } }) {
-        frontmatter {
-          title
-          categories {
-            name
-            items {
-              name
-              description
-              price
-            }
-          }
-        }
-      }
-    }
-  `);
-  
+export default function Menu({ data }) {
   return (
     <Layout>
       <div id={styles.main}>
@@ -36,3 +18,21 @@ export default function Menu() {
     </Layout>
   );
 }
+
+export const query = graphql`
+  {
+    markdownRemark(frontmatter: { contentKey: { eq: "menu" } }) {
+      frontmatter {
+        title
+        categories {
+          name
+          items {
+            name
+            description
+            price
+          }
+        }
+      }
+    }
+  }
+`;
