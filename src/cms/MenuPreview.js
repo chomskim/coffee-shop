@@ -1,5 +1,6 @@
 import React from "react";
-import MenuPage from "../pages/cafe-menu";
+import '../global.css';
+import CafeMenu from '../components/CafeMenu';
 
 export default function MenuPreview({ entry }) {
   const menu = entry.getIn(["data"]).toJS();
@@ -10,5 +11,5 @@ export default function MenuPreview({ entry }) {
       },
     },
   };
-  return <MenuPage data={data} />;
+  return <CafeMenu data={data} />;
 }
